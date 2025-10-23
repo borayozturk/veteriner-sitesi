@@ -1,0 +1,36 @@
+PetKey Veteriner - Mesajınız Alındı
+=====================================
+
+Sayın {{ name }},
+
+İletişim formumuz aracılığıyla gönderdiğiniz mesaj başarıyla tarafımıza ulaşmıştır.
+Mesajınızı en kısa sürede değerlendireceğiz ve size geri dönüş yapacağız.
+
+MESAJ DETAYLARI
+---------------
+Ad Soyad: {{ name }}
+E-posta: {{ email }}
+Telefon: {{ phone }}
+{% if subject %}Konu: {{ subject }}{% endif %}
+
+Mesajınız:
+{{ message }}
+
+SİZE EN KISA SÜREDE DÖNÜŞ YAPACAĞIZ
+------------------------------------
+Ekibimiz mesajınızı inceleyecek ve genellikle 24 saat içinde size geri dönüş yapacaktır.
+Acil durumlar için lütfen bizi doğrudan telefonla arayınız.
+
+Acil Durum Hattı: (0212) 123 45 67 (7/24)
+
+İLETİŞİM BİLGİLERİMİZ
+---------------------
+Telefon: (0212) 123 45 67
+E-posta: info@petkey.com
+Adres: İstanbul, Türkiye
+Çalışma Saatleri: Hafta içi 09:00-18:00, Cumartesi 09:00-14:00
+Web: http://localhost:5173
+
+Bu e-posta PetKey Veteriner tarafından otomatik olarak gönderilmiştir.
+
+© 2025 PetKey Veteriner. Tüm hakları saklıdır.

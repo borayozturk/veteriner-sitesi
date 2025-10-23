@@ -1,0 +1,84 @@
+==============================================
+PETKEY VETERİNER - DEPLOYMENT BİLGİLERİ
+==============================================
+
+📝 RENDER.COM İÇİN HAZIR BİLGİLER
+
+---
+🔐 SECRET_KEY (Backend için)
+---
+3_pmlt!sqbrn@s1t3b5v-#5p&4#ynpjim*1ln5cxx@tm-+=2a_
+
+---
+⚙️ BACKEND AYARLARI (Web Service)
+---
+Name: petkey-backend
+Region: Frankfurt (Europe West)
+Root Directory: backend
+Runtime: Python 3
+Build Command: ./build.sh
+Start Command: gunicorn petkey_api.wsgi:application
+Plan: Free
+
+Environment Variables:
+-----
+DEBUG=False
+SECRET_KEY=3_pmlt!sqbrn@s1t3b5v-#5p&4#ynpjim*1ln5cxx@tm-+=2a_
+ALLOWED_HOSTS=.onrender.com
+CORS_ALLOWED_ORIGINS=https://petkey-frontend.onrender.com
+CSRF_TRUSTED_ORIGINS=https://petkey-frontend.onrender.com
+DATABASE_URL=[PostgreSQL oluşturduktan sonra buraya yapıştır]
+-----
+
+---
+🎨 FRONTEND AYARLARI (Static Site)
+---
+Name: petkey-frontend
+Root Directory: (boş bırak)
+Build Command: npm install && npm run build
+Publish Directory: dist
+Auto-Deploy: Yes
+Plan: Free
+
+Environment Variables:
+-----
+VITE_API_URL=https://petkey-backend.onrender.com
+-----
+
+---
+🗄️ POSTGRESQL AYARLARI
+---
+Name: petkey-database
+Database Name: petkey_db
+User: petkey_user
+Region: Frankfurt (Europe West)
+Plan: Free
+
+NOT: Oluşturduktan sonra "Internal Database URL" kopyala
+     ve backend environment variables'a ekle
+
+---
+📋 DEPLOYMENT SIRASI
+---
+1. GitHub'a yükle
+2. Render'da PostgreSQL oluştur → URL'i kopyala
+3. Render'da Backend oluştur → Environment variables ekle
+4. Render'da Frontend oluştur → Backend URL'ini ekle
+5. Backend environment'a Frontend URL'ini ekle → Redeploy
+6. Admin kullanıcısı oluştur (Backend Shell)
+7. Test et!
+
+---
+✅ DEPLOY SONRASI TEST URL'LERİ
+---
+Frontend: https://petkey-frontend.onrender.com
+Backend API: https://petkey-backend.onrender.com/api/
+Admin Panel: https://petkey-backend.onrender.com/admin
+
+---
+🎯 İLK ADMİN KULLANICISI OLUŞTURMA
+---
+Backend servisine git → Shell sekmesi → Komut:
+python manage.py createsuperuser
+
+==============================================

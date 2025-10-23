@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(source:*)",
+      "Bash(django-admin startproject:*)",
+      "Bash(curl http://localhost:8000/api/appointments/)",
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout 5 bash:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

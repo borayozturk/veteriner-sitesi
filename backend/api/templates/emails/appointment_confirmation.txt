@@ -1,0 +1,41 @@
+PetKey Veteriner - Randevu Onayı
+=====================================
+
+Sayın {{ name }},
+
+Randevu talebiniz başarıyla alınmıştır.
+
+RANDEVU DETAYLARI
+-----------------
+Pet Sahibi: {{ name }}
+Pet Adı: {{ pet_name }}
+Pet Türü: {{ pet_type }}
+Randevu Tarihi: {{ appointment_date }}
+Randevu Saati: {{ appointment_time }}
+{% if service %}Hizmet: {{ service }}{% endif %}
+E-posta: {{ email }}
+Telefon: {{ phone }}
+Durum: Onay Bekliyor
+
+{% if notes %}
+Notlarınız:
+{{ notes }}
+{% endif %}
+
+ÖNEMLİ BİLGİLER
+---------------
+- Randevunuz henüz onaylanmamıştır. Ekibimiz en kısa sürede sizinle iletişime geçecektir.
+- Randevu saatinden en az 15 dakika önce kliniğimizde bulunmanızı rica ederiz.
+- Randevunuzu iptal etmeniz veya değiştirmeniz gerekiyorsa, lütfen en az 24 saat önceden bizi bilgilendiriniz.
+- Lütfen aşı karnesi ve varsa önceki sağlık kayıtlarını yanınızda getirin.
+
+İLETİŞİM BİLGİLERİMİZ
+---------------------
+Telefon: (0212) 123 45 67
+E-posta: info@petkey.com
+Adres: İstanbul, Türkiye
+Web: http://localhost:5173
+
+Bu e-posta PetKey Veteriner tarafından otomatik olarak gönderilmiştir.
+
+© 2025 PetKey Veteriner. Tüm hakları saklıdır.

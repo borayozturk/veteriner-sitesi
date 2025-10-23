@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Onayı - PetKey Veteriner</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #10b981;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        h1 {
+            color: #10b981;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .appointment-details {
+            background-color: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .detail-row {
+            display: flex;
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #d1fae5;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: bold;
+            color: #047857;
+            min-width: 150px;
+        }
+        .detail-value {
+            color: #333;
+        }
+        .message {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box {
+            background-color: #eff6ff;
+            border: 1px solid #3b82f6;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box h3 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-top: 0;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .contact-info {
+            margin: 15px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #10b981;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .status-pending {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🐾 PetKey Veteriner</div>
+            <div class="tagline">İstanbul'un En Güvenilir Veteriner Kliniği</div>
+        </div>
+
+        <h1>Randevunuz Alındı!</h1>
+
+        <p>Sayın {{ name }},</p>
+
+        <p>Randevu talebiniz başarıyla alınmıştır. Aşağıda randevu detaylarınızı bulabilirsiniz:</p>
+
+        <div class="appointment-details">
+            <div class="detail-row">
+                <span class="detail-label">Pet Sahibi:</span>
+                <span class="detail-value">{{ name }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Pet Adı:</span>
+                <span class="detail-value">{{ pet_name }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Pet Türü:</span>
+                <span class="detail-value">{{ pet_type }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Randevu Tarihi:</span>
+                <span class="detail-value">{{ appointment_date }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Randevu Saati:</span>
+                <span class="detail-value">{{ appointment_time }}</span>
+            </div>
+            {% if service %}
+            <div class="detail-row">
+                <span class="detail-label">Hizmet:</span>
+                <span class="detail-value">{{ service }}</span>
+            </div>
+            {% endif %}
+            <div class="detail-row">
+                <span class="detail-label">E-posta:</span>
+                <span class="detail-value">{{ email }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Telefon:</span>
+                <span class="detail-value">{{ phone }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Durum:</span>
+                <span class="detail-value"><span class="status-badge status-pending">Onay Bekliyor</span></span>
+            </div>
+        </div>
+
+        {% if notes %}
+        <div class="message">
+            <strong>Notlarınız:</strong><br>
+            {{ notes }}
+        </div>
+        {% endif %}
+
+        <div class="info-box">
+            <h3>📋 Önemli Bilgiler</h3>
+            <ul>
+                <li>Randevunuz henüz onaylanmamıştır. Ekibimiz en kısa sürede sizinle iletişime geçecektir.</li>
+                <li>Randevu saatinden en az 15 dakika önce kliniğimizde bulunmanızı rica ederiz.</li>
+                <li>Randevunuzu iptal etmeniz veya değiştirmeniz gerekiyorsa, lütfen en az 24 saat önceden bizi bilgilendiriniz.</li>
+                <li>Lütfen aşı karnesi ve varsa önceki sağlık kayıtlarını yanınızda getirin.</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="http://localhost:5173/iletisim" class="button">Bizimle İletişime Geçin</a>
+        </div>
+
+        <div class="footer">
+            <div class="contact-info">
+                <strong>İletişim Bilgilerimiz:</strong><br>
+                📞 Telefon: (0212) 123 45 67<br>
+                📧 E-posta: info@petkey.com<br>
+                📍 Adres: İstanbul, Türkiye
+            </div>
+            <p>Bu e-posta PetKey Veteriner tarafından otomatik olarak gönderilmiştir.</p>
+            <p>&copy; 2025 PetKey Veteriner. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>

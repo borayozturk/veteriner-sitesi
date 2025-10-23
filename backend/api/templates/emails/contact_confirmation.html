@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesajınız Alındı - PetKey Veteriner</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #10b981;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        h1 {
+            color: #10b981;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .message-details {
+            background-color: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .detail-row {
+            display: flex;
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #d1fae5;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: bold;
+            color: #047857;
+            min-width: 120px;
+        }
+        .detail-value {
+            color: #333;
+        }
+        .user-message {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box {
+            background-color: #eff6ff;
+            border: 1px solid #3b82f6;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box h3 {
+            color: #1e40af;
+            font-size: 16px;
+            margin-top: 0;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .contact-info {
+            margin: 15px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #10b981;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .checkmark {
+            font-size: 48px;
+            color: #10b981;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🐾 PetKey Veteriner</div>
+            <div class="tagline">İstanbul'un En Güvenilir Veteriner Kliniği</div>
+        </div>
+
+        <div class="checkmark">✓</div>
+
+        <h1>Mesajınız Alındı!</h1>
+
+        <p>Sayın {{ name }},</p>
+
+        <p>İletişim formumuz aracılığıyla gönderdiğiniz mesaj başarıyla tarafımıza ulaşmıştır. Mesajınızı en kısa sürede değerlendireceğiz ve size geri dönüş yapacağız.</p>
+
+        <div class="message-details">
+            <div class="detail-row">
+                <span class="detail-label">Ad Soyad:</span>
+                <span class="detail-value">{{ name }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">E-posta:</span>
+                <span class="detail-value">{{ email }}</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Telefon:</span>
+                <span class="detail-value">{{ phone }}</span>
+            </div>
+            {% if subject %}
+            <div class="detail-row">
+                <span class="detail-label">Konu:</span>
+                <span class="detail-value">{{ subject }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="user-message">
+            <strong>Mesajınız:</strong><br>
+            {{ message }}
+        </div>
+
+        <div class="info-box">
+            <h3>📞 Size En Kısa Sürede Dönüş Yapacağız</h3>
+            <p>Ekibimiz mesajınızı inceleyecek ve genellikle 24 saat içinde size geri dönüş yapacaktır. Acil durumlar için lütfen bizi doğrudan telefonla arayınız.</p>
+            <p><strong>Acil Durum Hattı:</strong> (0212) 123 45 67 (7/24)</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="http://localhost:5173" class="button">Web Sitemizi Ziyaret Edin</a>
+        </div>
+
+        <div class="footer">
+            <div class="contact-info">
+                <strong>İletişim Bilgilerimiz:</strong><br>
+                📞 Telefon: (0212) 123 45 67<br>
+                📧 E-posta: info@petkey.com<br>
+                📍 Adres: İstanbul, Türkiye<br>
+                🕐 Çalışma Saatleri: Hafta içi 09:00-18:00, Cumartesi 09:00-14:00
+            </div>
+            <p>Bu e-posta PetKey Veteriner tarafından otomatik olarak gönderilmiştir.</p>
+            <p>&copy; 2025 PetKey Veteriner. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)"/>
+
+  <!-- Paw Print -->
+  <!-- Main Pad -->
+  <ellipse cx="50" cy="60" rx="12" ry="15" fill="white"/>
+
+  <!-- Top Left Toe -->
+  <ellipse cx="35" cy="45" rx="7" ry="10" fill="white" transform="rotate(-20 35 45)"/>
+
+  <!-- Top Center Toe -->
+  <ellipse cx="50" cy="40" rx="7" ry="10" fill="white"/>
+
+  <!-- Top Right Toe -->
+  <ellipse cx="65" cy="45" rx="7" ry="10" fill="white" transform="rotate(20 65 45)"/>
+
+  <!-- Bottom Toe -->
+  <ellipse cx="50" cy="75" rx="6" ry="8" fill="white"/>
+</svg>
