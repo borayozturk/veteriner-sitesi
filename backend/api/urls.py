@@ -50,8 +50,8 @@ urlpatterns = [
     path('', include(router.urls)),
     # Authentication endpoints (CSRF exempt for cross-origin)
     path('auth/login/', csrf_exempt(login_view), name='login'),
-    path('auth/logout/', logout_view, name='logout'),
-    path('auth/check/', check_auth, name='check-auth'),
+    path('auth/logout/', csrf_exempt(logout_view), name='logout'),
+    path('auth/check/', csrf_exempt(check_auth), name='check-auth'),
     # User management endpoints
     path('users/', get_users, name='get-users'),
     path('users/create/', create_user, name='create-user'),
