@@ -10,3 +10,6 @@ DJANGO_SETTINGS_MODULE=petkey_api.settings python manage.py collectstatic --no-i
 
 # Run migrations
 python manage.py migrate
+
+# Create admin user if doesn't exist
+python manage.py create_admin

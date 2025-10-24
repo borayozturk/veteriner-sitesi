@@ -24,6 +24,12 @@ services:
         value: https://petkey-frontend.onrender.com
       - key: CSRF_TRUSTED_ORIGINS
         value: https://petkey-frontend.onrender.com
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_EMAIL
+        value: admin@petkey.com
+      - key: ADMIN_PASSWORD
+        value: PetKey2024Admin!
 
   # React Frontend
   - type: web
