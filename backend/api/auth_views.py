@@ -8,9 +8,9 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
 
+@csrf_exempt
 @api_view(['POST'])
 @permission_classes([AllowAny])
-@csrf_exempt
 def login_view(request):
     """Login endpoint"""
     username = request.data.get('username')
