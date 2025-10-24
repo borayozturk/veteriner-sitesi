@@ -35,7 +35,7 @@ services:
   - type: web
     name: petkey-frontend
     runtime: static
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --legacy-peer-deps && npm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
     headers:
