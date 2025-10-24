@@ -24,15 +24,23 @@
     "@tiptap/extension-underline": "^3.6.7",
     "@tiptap/react": "^3.6.7",
     "@tiptap/starter-kit": "^3.6.7",
-    "framer-motion": "^12.23.22",
+    "framer-motion": "^11.11.17",
     "prop-types": "^15.8.1",
-    "react": "^18.3.1",
+    "react": "18.3.1",
     "react-countup": "^6.5.3",
-    "react-dom": "^18.3.1",
+    "react-dom": "18.3.1",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
     "react-router-dom": "^6.28.0"
+  },
+  "resolutions": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
