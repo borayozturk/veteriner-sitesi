@@ -16,7 +16,7 @@ services:
     rootDir: backend
     buildCommand: "./build.sh"
     startCommand: "gunicorn petkey_api.wsgi:application"
-    healthCheckPath: /api/
+    healthCheckPath: /health/
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
