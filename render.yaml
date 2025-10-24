@@ -30,6 +30,8 @@ services:
         value: admin@petkey.com
       - key: ADMIN_PASSWORD
         value: PetKey2024Admin!
+      - key: RESET_DATA
+        value: true
 
   # React Frontend
   - type: web

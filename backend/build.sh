@@ -14,5 +14,10 @@ python manage.py migrate
 # Create admin user if doesn't exist
 python manage.py create_admin
 
-# Load initial data (blog posts, services, etc.)
-python manage.py load_initial_data
+# Always reset data to fix ID issues (only runs if RESET_DATA=true in env)
+if [ "$RESET_DATA" = "true" ]; then
+    echo "Resetting and loading initial data..."
+    python manage.py reset_data
+else
+    echo "Skipping data reset (set RESET_DATA=true to reset)"
+fi
