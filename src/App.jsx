@@ -55,7 +55,7 @@ function ScrollToTop() {
   return null;
 }
 
-function App() {
+function AppContent() {
   const location = useLocation();
   const isAdminRoute = location?.pathname?.startsWith('/admin');
 
@@ -124,13 +124,13 @@ function App() {
   );
 }
 
-function AppWrapper() {
+function App() {
   return (
     <ErrorBoundary>
       <HelmetProvider>
         <SEOProvider>
           <Router>
-            <App />
+            <AppContent />
           </Router>
         </SEOProvider>
       </HelmetProvider>
@@ -138,4 +138,4 @@ function AppWrapper() {
   );
 }
 
-export default AppWrapper;
+export default App;
