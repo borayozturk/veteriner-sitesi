@@ -163,6 +163,25 @@ CORS_ALLOWED_ORIGINS = os.environ.get(
 ).split(',')
 
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
 
 # CSRF settings
 CSRF_TRUSTED_ORIGINS = os.environ.get(
@@ -173,8 +192,15 @@ CSRF_TRUSTED_ORIGINS = os.environ.get(
 # CSRF Cookie settings
 CSRF_COOKIE_NAME = 'csrftoken'
 CSRF_COOKIE_HTTPONLY = False  # Allow JavaScript to read the cookie
-CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'None' if not DEBUG else 'Lax'  # None for production cross-origin
+CSRF_COOKIE_SECURE = not DEBUG  # Secure cookies in production
 CSRF_USE_SESSIONS = False
+
+# Session Cookie settings for cross-origin
+SESSION_COOKIE_SAMESITE = 'None' if not DEBUG else 'Lax'
+SESSION_COOKIE_SECURE = not DEBUG  # Secure cookies in production
+SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access
+SESSION_COOKIE_AGE = 86400  # 24 hours
 
 # REST Framework settings
 REST_FRAMEWORK = {
