@@ -1,0 +1,1781 @@
+[
+{
+  "model": "api.veterinarian",
+  "pk": 15,
+  "fields": {
+    "user": null,
+    "name": "Dr. Kebap Aşığı",
+    "slug": "dr-kebap-asg",
+    "specialty": "Kısırlaştırma",
+    "bio": "Eğitimini istanbulda aldı.",
+    "avatar": "veterinarians/166554.jpg",
+    "experience_years": 15,
+    "education": "istanbul üniversitesi veterinerlik fakültesi",
+    "graduation_year": 1995,
+    "certifications": "am yalama sertifikası",
+    "expertise_areas": "deneme\r\n123\r\nuzamnlık",
+    "achievements": "",
+    "monday_hours": "7/24",
+    "tuesday_hours": "7/24",
+    "wednesday_hours": "7/24",
+    "thursday_hours": "7/24",
+    "friday_hours": "",
+    "saturday_hours": "",
+    "sunday_hours": "",
+    "phone": "5386421054",
+    "email": "drhouse@gmail.com",
+    "address": "",
+    "is_active": true,
+    "created_at": "2025-10-21T10:13:08.420Z",
+    "updated_at": "2025-10-23T07:46:20.662Z"
+  }
+},
+{
+  "model": "api.veterinarian",
+  "pk": 14,
+  "fields": {
+    "user": null,
+    "name": "Dr. Can Ozturk",
+    "slug": "dr-can-ozturk",
+    "specialty": "Ortopedi Uzmani",
+    "bio": "Hayvan ortopedisi ve travmatoloji alaninda uzman veteriner hekim.",
+    "avatar": "veterinarians/B2.jfif",
+    "experience_years": 12,
+    "education": "Uludag Universitesi Veteriner Fakultesi",
+    "graduation_year": null,
+    "certifications": "Ortopedi Uzmanlik Belgesi",
+    "expertise_areas": "",
+    "achievements": "",
+    "monday_hours": "",
+    "tuesday_hours": "",
+    "wednesday_hours": "",
+    "thursday_hours": "",
+    "friday_hours": "",
+    "saturday_hours": "",
+    "sunday_hours": "",
+    "phone": "+90 532 999 0011",
+    "email": "can.ozturk@petkey.com",
+    "address": "",
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.617Z",
+    "updated_at": "2025-10-23T07:46:20.671Z"
+  }
+},
+{
+  "model": "api.veterinarian",
+  "pk": 13,
+  "fields": {
+    "user": null,
+    "name": "Dr. Zeynep güneş",
+    "slug": "dr-zeynep-gunes",
+    "specialty": "Kedi Hastaliklari Uzmani",
+    "bio": "Kedi hastaliklari ve davranis problemleri konusunda uzmanlasmis veteriner hekim.",
+    "avatar": "veterinarians/DF.png",
+    "experience_years": 8,
+    "education": "Ege Universitesi Veteriner Fakultesi",
+    "graduation_year": null,
+    "certifications": "",
+    "expertise_areas": "",
+    "achievements": "FDGF",
+    "monday_hours": "",
+    "tuesday_hours": "",
+    "wednesday_hours": "",
+    "thursday_hours": "",
+    "friday_hours": "",
+    "saturday_hours": "",
+    "sunday_hours": "",
+    "phone": "+90 532 777 8899",
+    "email": "zeynep.kaya@petkey.com",
+    "address": "",
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.613Z",
+    "updated_at": "2025-10-23T07:46:20.679Z"
+  }
+},
+{
+  "model": "api.veterinarian",
+  "pk": 12,
+  "fields": {
+    "user": null,
+    "name": "Dr. Mehmet Demir",
+    "slug": "dr-mehmet-demir",
+    "specialty": "Cerrahi Uzmani",
+    "bio": "Veteriner cerrahisi alaninda 10 yillik deneyim. Ortopedik ve yumusak doku cerrahisi konusunda uzmanim.",
+    "avatar": "veterinarians/TÜSEB.png",
+    "experience_years": 10,
+    "education": "Ankara Universitesi Veteriner Fakultesi",
+    "graduation_year": null,
+    "certifications": "Cerrahi Uzmanlik Belgesi, Anestezi Sertifikasi",
+    "expertise_areas": "",
+    "achievements": "",
+    "monday_hours": "",
+    "tuesday_hours": "",
+    "wednesday_hours": "",
+    "thursday_hours": "",
+    "friday_hours": "",
+    "saturday_hours": "",
+    "sunday_hours": "",
+    "phone": "+90 532 444 5566",
+    "email": "mehmet.demir@petkey.com",
+    "address": "",
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.609Z",
+    "updated_at": "2025-10-23T07:46:20.687Z"
+  }
+},
+{
+  "model": "api.veterinarian",
+  "pk": 11,
+  "fields": {
+    "user": null,
+    "name": "Dr. Ayse Yilmaz",
+    "slug": "dr-ayse-yilmaz",
+    "specialty": "Genel Veteriner Hekim",
+    "bio": "15 yildir evcil hayvan sagligi alaninda hizmet vermekteyim. Kedi ve kopeklerin ic hastaliklari konusunda uzmanim.",
+    "avatar": "veterinarians/simpliers-hacettepefenfakultesi.jpg",
+    "experience_years": 15,
+    "education": "Istanbul Universitesi Veteriner Fakultesi",
+    "graduation_year": null,
+    "certifications": "Veteriner Hekimlik Diplomasi, Ic Hastaliklari Sertifikasi",
+    "expertise_areas": "",
+    "achievements": "",
+    "monday_hours": "",
+    "tuesday_hours": "",
+    "wednesday_hours": "",
+    "thursday_hours": "",
+    "friday_hours": "",
+    "saturday_hours": "",
+    "sunday_hours": "",
+    "phone": "+90 532 111 2233",
+    "email": "ayse.yilmaz@petkey.com",
+    "address": "",
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.603Z",
+    "updated_at": "2025-10-23T07:46:20.694Z"
+  }
+},
+{
+  "model": "api.blogpost",
+  "pk": 19,
+  "fields": {
+    "author": 15,
+    "title": "KEDİLERDE HPV",
+    "slug": "kedilerde-hpv",
+    "excerpt": "kedilerde kaapak dsdasd sadas",
+    "content": "<p>kedi sdfsdfsd fdsfsdfsdfsdfsdfsdfsd</p>",
+    "featured_image": "blog/ac272714-0b09-4959-a336-0ba52e04fa1d.jpeg",
+    "category": "hpv",
+    "tags": "kedi,köpek,hastalanma",
+    "status": "published",
+    "views": 8,
+    "published_at": "2025-10-22T11:09:16.714Z",
+    "created_at": "2025-10-22T11:09:16.772Z",
+    "updated_at": "2025-10-22T11:09:16.811Z"
+  }
+},
+{
+  "model": "api.blogpost",
+  "pk": 18,
+  "fields": {
+    "author": 14,
+    "title": "Kopeklerde Eklem Sagligi ve Artrit",
+    "slug": "kopeklerde-eklem-sagligi-ve-artrit",
+    "excerpt": "Yasli kopeklerde eklem problemleri ve artrit tedavisi hakkinda bilmeniz gerekenler.",
+    "content": "<p>dfgdfg</p>",
+    "featured_image": "blog/blog_38bb44fa-c884-4839-94e0-66edd7bd66d1.jpeg",
+    "category": "Saglik",
+    "tags": "kopek, eklem, artrit, yasli",
+    "status": "published",
+    "views": 120,
+    "published_at": "2025-10-16T10:53:12.274Z",
+    "created_at": "2025-10-16T05:48:49.642Z",
+    "updated_at": "2025-10-16T11:36:02.457Z"
+  }
+},
+{
+  "model": "api.blogpost",
+  "pk": 17,
+  "fields": {
+    "author": 11,
+    "title": "Kis Aylarinda Evcil Hayvan Bakimi",
+    "slug": "kis-aylarinda-evcil-hayvan-bakimi",
+    "excerpt": "Soguk havalarda evcil hayvaninizin sagligini korumak icin nelere dikkat etmelisiniz?",
+    "content": "Kis aylari evcil hayvanlarimiz icin zorlu olabilir.\n\nBeslenme: Soguk havalarda enerji ihtiyaci artar. Ozellikle disarida vakit geciren hayvanlar icin porsiyon miktarini artirabilirsiniz.\n\nPati Bakimi: Kar ve tuz patileri tahris edebilir. Yuruyusten sonra patileri ilik suyla temizleyin.\n\nBarinak: Disarida kalan hayvanlar icin uygun barinak saglayin.",
+    "featured_image": "",
+    "category": "Bakim",
+    "tags": "kis, bakim, beslenme, pati",
+    "status": "published",
+    "views": 145,
+    "published_at": "2025-10-13T05:48:49.636Z",
+    "created_at": "2025-10-16T05:48:49.636Z",
+    "updated_at": "2025-10-16T05:48:49.636Z"
+  }
+},
+{
+  "model": "api.blogpost",
+  "pk": 16,
+  "fields": {
+    "author": 12,
+    "title": "Evcil Hayvaninizin Kisirlastirilmasi: Faydalarive Surec",
+    "slug": "evcil-hayvaninizin-kisirlastirilmasi-faydalarive-surec",
+    "excerpt": "Kisirlastrma operasyonu hakkinda merak ettikleriniz ve bu islemin faydlari.",
+    "content": "Kisirlastrma, evcil hayvaninizin ureme yetenegini ortadan kaldiran cerrahi bir islemdir.\n\nSaglik Faydalari:\n- Meme tumoru riskini %95 azaltir\n- Rahim iltihabi riskini ortadan kaldirir\n- Prostat problemlerini onler\n\nDavranissal Faydalar:\n- Saldrganligi azaltir\n- Kacma egilimini azaltir\n\nDogru zaman: Kopekler 6-12 aylik, Kediler 5-6 aylikken.",
+    "featured_image": "",
+    "category": "Saglik",
+    "tags": "kisirlastrma, cerrahi, saglik",
+    "status": "published",
+    "views": 171,
+    "published_at": "2025-10-09T05:48:49.632Z",
+    "created_at": "2025-10-16T05:48:49.632Z",
+    "updated_at": "2025-10-16T05:48:49.632Z"
+  }
+},
+{
+  "model": "api.blogpost",
+  "pk": 15,
+  "fields": {
+    "author": 13,
+    "title": "Kedilerde Kum Kabi Egitimi: Ipuclari ve Puf Noktalari",
+    "slug": "kedilerde-kum-kabi-egitimi-ipuclari-ve-puf-noktalari",
+    "excerpt": "Yeni kedi sahibi misiniz? Kum kabi egitimi konusunda bilmeniz gereken her sey burada.",
+    "content": "Kediler dogal olarak temiz hayvanlardir. Dogru kum kabi secimi ve yerlestirme ile egitim cok kolay olabilir.\n\nIdeal kum kabi ozelikleri:\n- Kedinin rahatca donebilecegi buyuklukde\n- Acik veya kapali (kedinin tercihine gore)\n- Kolay temizlenebilir\n\nKum kabi sayisi: Evinizde bulunan kedi sayisi + 1 adet olmaldir.",
+    "featured_image": "",
+    "category": "Bakim",
+    "tags": "kedi, egitim, kum kabi, temizlik",
+    "status": "published",
+    "views": 189,
+    "published_at": "2025-10-06T05:48:49.627Z",
+    "created_at": "2025-10-16T05:48:49.627Z",
+    "updated_at": "2025-10-16T05:48:49.627Z"
+  }
+},
+{
+  "model": "api.blogpost",
+  "pk": 14,
+  "fields": {
+    "author": 11,
+    "title": "Kopeklerde Asi Takvimi: Ne Zaman Hangi Asi?",
+    "slug": "kopeklerde-asi-takvimi-ne-zaman-hangi-asi",
+    "excerpt": "Yeni sahiplendiginiz kopeginizin saglikli kalmasi icin asi takvimini takip etmek cok onemli. Bu yazida tum detaylari bulabilirsiniz.",
+    "content": "Kopeginizin saglikli bir yasam surmes icin asi takvimini duzgun takip etmek hayati onem tasiyor.\n\n6-8 Haftalik: Distemper, Parvovirus, Adenovirus\n10-12 Haftalik: DHPP (Kombinasyon asisi), Leptospiroz\n14-16 Haftalik: DHPP rapeli, Kuduz asisi\n\nYetiskin kopekler icin yillik rapel asilari unutmayin!",
+    "featured_image": "",
+    "category": "Saglik",
+    "tags": "asi, kopek, saglik, koruyucu bakim",
+    "status": "published",
+    "views": 257,
+    "published_at": "2025-10-01T05:48:49.622Z",
+    "created_at": "2025-10-16T05:48:49.623Z",
+    "updated_at": "2025-10-16T05:48:49.623Z"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 2,
+  "fields": {
+    "slug": "yurtdisi-cikis",
+    "icon": "✈️",
+    "title": "Yurtdışı Çıkış İşlemleri",
+    "short_description": "Sevimli dostlarınızla yurt dışına seyahat etmek için gerekli tüm veteriner işlemleri.",
+    "is_active": true,
+    "order": 1,
+    "created_at": "2025-10-16T10:58:55.620Z",
+    "updated_at": "2025-10-22T06:28:57.353Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 3,
+  "fields": {
+    "slug": "kalp-muayenesi",
+    "icon": "❤️",
+    "title": "Kalp Muayenesi",
+    "short_description": "Evcil hayvanınızın kalp sağlığının detaylı kontrolü ve erken teşhis.",
+    "is_active": true,
+    "order": 2,
+    "created_at": "2025-10-16T10:58:55.847Z",
+    "updated_at": "2025-10-16T11:25:50.249Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 4,
+  "fields": {
+    "slug": "check-up",
+    "icon": "🔍",
+    "title": "Check-Up",
+    "short_description": "Kapsamlı sağlık kontrolü ile dostunuzun sağlığını koruma altına alın.",
+    "is_active": true,
+    "order": 3,
+    "created_at": "2025-10-16T10:58:56.048Z",
+    "updated_at": "2025-10-23T07:57:34.244Z",
+    "meta_title": "Check- up | X veteriner",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 5,
+  "fields": {
+    "slug": "kuduz-titrasyon-testi",
+    "icon": "🧪",
+    "title": "Kuduz Titrasyon Testi",
+    "short_description": "AB ülkelerine seyahat için zorunlu kuduz antikor düzeyi testi.",
+    "is_active": true,
+    "order": 4,
+    "created_at": "2025-10-16T10:58:56.332Z",
+    "updated_at": "2025-10-16T10:58:56.332Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 6,
+  "fields": {
+    "slug": "asilama",
+    "icon": "💉",
+    "title": "Aşılama",
+    "short_description": "Dostlarınızı hastalıklardan korumak için düzenli aşılama programı.",
+    "is_active": true,
+    "order": 5,
+    "created_at": "2025-10-16T10:58:56.539Z",
+    "updated_at": "2025-10-22T08:22:03.184Z",
+    "meta_title": "Aşılama | X veteriner",
+    "meta_description": "aşılama işlemleri sdfsd",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 7,
+  "fields": {
+    "slug": "cerrahi-operasyonlar",
+    "icon": "⚕️",
+    "title": "Cerrahi Operasyonlar",
+    "short_description": "Güvenli Müdahale, Hızlı İyileşme",
+    "is_active": true,
+    "order": 6,
+    "created_at": "2025-10-16T10:58:56.765Z",
+    "updated_at": "2025-10-16T10:58:56.765Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 8,
+  "fields": {
+    "slug": "parazit-tedavisi",
+    "icon": "🦠",
+    "title": "Parazit Tedavisi",
+    "short_description": "İç ve dış parazitlere karşı etkili koruma ve tedavi.",
+    "is_active": true,
+    "order": 7,
+    "created_at": "2025-10-16T10:58:56.979Z",
+    "updated_at": "2025-10-16T11:26:05.467Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 9,
+  "fields": {
+    "slug": "laboratuvar-hizmetleri",
+    "icon": "🔬",
+    "title": "Laboratuvar Hizmetleri",
+    "short_description": "Modern ekipmanlarla hızlı ve güvenilir laboratuvar testleri.",
+    "is_active": true,
+    "order": 8,
+    "created_at": "2025-10-16T10:58:57.058Z",
+    "updated_at": "2025-10-16T10:58:57.058Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 10,
+  "fields": {
+    "slug": "dogum-ve-jinekoloji",
+    "icon": "🤱",
+    "title": "Doğum ve Jinekoloji",
+    "short_description": "Gebelik takibi ve doğum sürecinde profesyonel destek.",
+    "is_active": true,
+    "order": 9,
+    "created_at": "2025-10-16T10:58:57.142Z",
+    "updated_at": "2025-10-16T10:58:57.142Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 11,
+  "fields": {
+    "slug": "viral-hastaliklar",
+    "icon": "🦠",
+    "title": "Viral Hastalıklar",
+    "short_description": "Viral enfeksiyonların teşhisi ve tedavisi.",
+    "is_active": true,
+    "order": 10,
+    "created_at": "2025-10-16T10:58:57.227Z",
+    "updated_at": "2025-10-16T10:58:57.228Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 12,
+  "fields": {
+    "slug": "goruntuleme-hizmetleri",
+    "icon": "📡",
+    "title": "Görüntüleme Hizmetleri",
+    "short_description": "Röntgen, ultrason ve ileri görüntüleme teknolojileri.",
+    "is_active": true,
+    "order": 11,
+    "created_at": "2025-10-16T10:58:57.333Z",
+    "updated_at": "2025-10-16T10:58:57.333Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 13,
+  "fields": {
+    "slug": "mikrocip-implantasyonu",
+    "icon": "📍",
+    "title": "Mikroçip İmplantasyonu",
+    "short_description": "Evcil hayvanınızın güvenliği için mikroçip uygulaması.",
+    "is_active": true,
+    "order": 12,
+    "created_at": "2025-10-16T10:58:57.418Z",
+    "updated_at": "2025-10-16T10:58:57.418Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 14,
+  "fields": {
+    "slug": "kedi-kopek-konaklama",
+    "icon": "🏠",
+    "title": "Kedi & Köpek Konaklaması",
+    "short_description": "Veteriner gözetiminde güvenli ve konforlu konaklama.",
+    "is_active": true,
+    "order": 13,
+    "created_at": "2025-10-16T10:58:57.509Z",
+    "updated_at": "2025-10-16T10:58:57.509Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 15,
+  "fields": {
+    "slug": "mama",
+    "icon": "🍖",
+    "title": "Mama ve Besin Desteği",
+    "short_description": "Kaliteli mama ve besin takviyesi ürünleri.",
+    "is_active": true,
+    "order": 14,
+    "created_at": "2025-10-16T10:58:57.592Z",
+    "updated_at": "2025-10-16T10:58:57.592Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 16,
+  "fields": {
+    "slug": "pet-kuafor",
+    "icon": "✂️",
+    "title": "Pet Kuaför",
+    "short_description": "Profesyonel tıraş, banyo ve bakım hizmetleri.",
+    "is_active": true,
+    "order": 15,
+    "created_at": "2025-10-16T10:58:57.672Z",
+    "updated_at": "2025-10-16T10:58:57.672Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 17,
+  "fields": {
+    "slug": "pet-malzeme",
+    "icon": "🎾",
+    "title": "Pet Malzeme",
+    "short_description": "Evcil hayvanınız için kaliteli ürünler ve aksesuarlar.",
+    "is_active": true,
+    "order": 16,
+    "created_at": "2025-10-16T10:58:57.757Z",
+    "updated_at": "2025-10-16T10:58:57.757Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.service",
+  "pk": 18,
+  "fields": {
+    "slug": "vaccinated-pets",
+    "icon": "🛡️",
+    "title": "Aşılı Hayvan Sertifikası",
+    "short_description": "Aşılama kayıtlarının resmi belgelerle tespit edilmesi.",
+    "is_active": true,
+    "order": 17,
+    "created_at": "2025-10-16T10:58:57.908Z",
+    "updated_at": "2025-10-16T10:58:57.908Z",
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "og_image": "/og-service.jpg"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 63,
+  "fields": {
+    "page_name": "yurtdisi-cikis",
+    "title": "Yurtdışı Çıkış İşlemleri",
+    "content": "Yurtdışına çıkış için gerekli tüm veteriner işlemleri.",
+    "sections": [],
+    "faqs": [],
+    "features": [],
+    "process_steps": [
+      ""
+    ],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-22T06:30:41.115Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 64,
+  "fields": {
+    "page_name": "kalp-muayenesi",
+    "title": "Kalp Muayenesi",
+    "content": "Evcil dostlarınızın kalp sağlığı için detaylı muayene.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.251Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 65,
+  "fields": {
+    "page_name": "check-up",
+    "title": "Check-Up",
+    "content": "Kapsamlı genel sağlık kontrolü ve tetkikler.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.262Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 66,
+  "fields": {
+    "page_name": "kuduz-titrasyon-testi",
+    "title": "Kuduz Titrasyon Testi",
+    "content": "Kuduz aşısı etkinliğini ölçen laboratuvar testi.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.266Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 67,
+  "fields": {
+    "page_name": "asilama",
+    "title": "Aşılama",
+    "content": "SADASDASDASD",
+    "sections": [
+      {
+        "id": 1760598937213,
+        "type": "both",
+        "title": "mertcan",
+        "content": "<h1>asdasdasd</h1><p>sadasdasd</p>",
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "id": 1760600039077,
+        "question": "nasılsın",
+        "answer": "iyi sensdfdfdsfdsfsdfsd"
+      },
+      {
+        "id": 1760600082373,
+        "question": "dsfsdfsdf",
+        "answer": "sdfsdfsd"
+      }
+    ],
+    "features": [
+      "Karma aşı (Distemper, Parvo, vb.)",
+      "sdfsdf",
+      "sdf",
+      "sdfsd",
+      "fsdf",
+      "sdfsdsdf"
+    ],
+    "process_steps": [],
+    "vaccination_schedule": {
+      "puppies": "fsdfdsf"
+    },
+    "updated_at": "2025-10-16T10:50:43.868Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 68,
+  "fields": {
+    "page_name": "laboratuvar-hizmetleri",
+    "title": "Laboratuvar Hizmetleri",
+    "content": "Tam donanımlı laboratuvar ve testler.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.282Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 69,
+  "fields": {
+    "page_name": "cerrahi-operasyonlar",
+    "title": "Cerrahi Operasyonlar",
+    "content": "Modern ameliyathane ve deneyimli ekip.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.289Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 70,
+  "fields": {
+    "page_name": "parazit-tedavisi",
+    "title": "Parazit Tedavisi",
+    "content": "İç ve dış parazit tedavi ve korunma.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.301Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 71,
+  "fields": {
+    "page_name": "dogum-ve-jinekoloji",
+    "title": "Doğum ve Jinekoloji",
+    "content": "Gebelik takibi ve doğum hizmetleri.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.307Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 72,
+  "fields": {
+    "page_name": "viral-hastaliklar",
+    "title": "Viral Hastalıklar",
+    "content": "Viral enfeksiyonların teşhis ve tedavisi.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.315Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 73,
+  "fields": {
+    "page_name": "goruntuleme-hizmetleri",
+    "title": "Görüntüleme Hizmetleri",
+    "content": "Röntgen, ultrason ve diğer görüntüleme.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.319Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 74,
+  "fields": {
+    "page_name": "mikrocip-implantasyonu",
+    "title": "Mikroçip İmplantasyonu",
+    "content": "Güvenli ve hızlı mikroçip uygulaması.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.323Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 75,
+  "fields": {
+    "page_name": "kedi-kopek-konaklama",
+    "title": "Kedi & Köpek Konaklama",
+    "content": "Konforlu ve güvenli pet oteli hizmeti.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.334Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 76,
+  "fields": {
+    "page_name": "mama",
+    "title": "Mama ve Besin Desteği",
+    "content": "Kaliteli mama ve takviye ürünleri.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.339Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 77,
+  "fields": {
+    "page_name": "pet-kuafor",
+    "title": "Pet Kuaför",
+    "content": "Profesyonel tıraş ve bakım hizmetleri.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.347Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 78,
+  "fields": {
+    "page_name": "pet-malzeme",
+    "title": "Pet Malzeme",
+    "content": "Kaliteli pet ürünleri ve aksesuarlar.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.353Z"
+  }
+},
+{
+  "model": "api.pagecontent",
+  "pk": 79,
+  "fields": {
+    "page_name": "vaccinated-pets",
+    "title": "Aşılı Hayvan Sertifikası",
+    "content": "Resmi aşı sertifikası düzenleme.",
+    "sections": {},
+    "faqs": [],
+    "features": [],
+    "process_steps": [],
+    "vaccination_schedule": {},
+    "updated_at": "2025-10-16T07:13:29.357Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 48,
+  "fields": {
+    "title": "ARİJNT SİNGH",
+    "description": "SDFSDFSDF",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmo_3m-j3MEkjY_3dQeTihAhxA9wMIdUTUzuoFUmuAZF7kaaKKZPZcbZPVpnSFnz-UTuEhCnp2JrqiPZUn2kqlc62geE-NUHBmjfOiKzQ",
+    "category": "dogs",
+    "tags": "köpek,tedavi",
+    "order": 0,
+    "is_active": true,
+    "created_at": "2025-10-16T06:17:50.391Z",
+    "updated_at": "2025-10-16T06:17:50.393Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 44,
+  "fields": {
+    "title": "Ekibimiz 1",
+    "description": "Uzman veteriner hekimlerimiz",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+    "category": "team",
+    "tags": "ekip, veteriner, uzman",
+    "order": 0,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.787Z",
+    "updated_at": "2025-10-16T05:48:49.787Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 41,
+  "fields": {
+    "title": "Klinigimiz 1",
+    "description": "Modern ekipmanlarimiz ve steril ortamimiz",
+    "image": "https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=800",
+    "category": "clinic",
+    "tags": "klinik, ekipman, hijyen",
+    "order": 0,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.770Z",
+    "updated_at": "2025-10-16T05:48:49.770Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 33,
+  "fields": {
+    "title": "Sevimli Kedi 1",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 0,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.729Z",
+    "updated_at": "2025-10-16T05:48:49.729Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 25,
+  "fields": {
+    "title": "Mutlu Kopek 1",
+    "description": "PARKTA BİRA İÇEN KÖPEK",
+    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 0,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.691Z",
+    "updated_at": "2025-10-16T06:41:17.520Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 45,
+  "fields": {
+    "title": "Ekibimiz 2",
+    "description": "Uzman veteriner hekimlerimiz",
+    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800",
+    "category": "team",
+    "tags": "ekip, veteriner, uzman",
+    "order": 1,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.792Z",
+    "updated_at": "2025-10-16T05:48:49.792Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 42,
+  "fields": {
+    "title": "Klinigimiz 2",
+    "description": "Modern ekipmanlarimiz ve steril ortamimiz",
+    "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=800",
+    "category": "clinic",
+    "tags": "klinik, ekipman, hijyen",
+    "order": 1,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.776Z",
+    "updated_at": "2025-10-16T05:48:49.776Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 34,
+  "fields": {
+    "title": "Sevimli Kedi 2",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 1,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.734Z",
+    "updated_at": "2025-10-16T05:48:49.734Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 26,
+  "fields": {
+    "title": "Mutlu Kopek 2",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 1,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.697Z",
+    "updated_at": "2025-10-16T05:48:49.697Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 46,
+  "fields": {
+    "title": "Ahmet ALÇAY",
+    "description": "veteoriner",
+    "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800",
+    "category": "team",
+    "tags": "ekip, veteriner, uzman",
+    "order": 2,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.797Z",
+    "updated_at": "2025-10-16T06:39:11.855Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 43,
+  "fields": {
+    "title": "Klinigimiz 3",
+    "description": "Modern ekipmanlarimiz ve steril ortamimiz",
+    "image": "https://images.unsplash.com/photo-1581888227599-779811939961?w=800",
+    "category": "clinic",
+    "tags": "klinik, ekipman, hijyen",
+    "order": 2,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.782Z",
+    "updated_at": "2025-10-16T05:48:49.782Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 35,
+  "fields": {
+    "title": "Sevimli Kedi 3",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1573865526739-10c1de0b6c78?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 2,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.738Z",
+    "updated_at": "2025-10-16T05:48:49.738Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 27,
+  "fields": {
+    "title": "Mutlu Kopek 3",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 2,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.702Z",
+    "updated_at": "2025-10-16T05:48:49.702Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 47,
+  "fields": {
+    "title": "Ekibimiz 4",
+    "description": "Uzman veteriner hekimlerimiz",
+    "image": "https://images.unsplash.com/photo-1612531386530-97286d97c2d2?w=800",
+    "category": "team",
+    "tags": "ekip, veteriner, uzman",
+    "order": 3,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.801Z",
+    "updated_at": "2025-10-16T05:48:49.801Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 36,
+  "fields": {
+    "title": "Sevimli Kedi 4",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 3,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.743Z",
+    "updated_at": "2025-10-16T05:48:49.743Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 28,
+  "fields": {
+    "title": "Mutlu Kopek 4",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 3,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.706Z",
+    "updated_at": "2025-10-16T05:48:49.706Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 37,
+  "fields": {
+    "title": "Sevimli Kedi 5",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 4,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.750Z",
+    "updated_at": "2025-10-16T05:48:49.750Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 29,
+  "fields": {
+    "title": "Mutlu Kopek 5",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 4,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.711Z",
+    "updated_at": "2025-10-16T05:48:49.711Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 38,
+  "fields": {
+    "title": "Sevimli Kedi 6",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 5,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.756Z",
+    "updated_at": "2025-10-16T05:48:49.756Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 30,
+  "fields": {
+    "title": "Mutlu Kopek 6",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 5,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.717Z",
+    "updated_at": "2025-10-16T05:48:49.717Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 39,
+  "fields": {
+    "title": "Sevimli Kedi 7",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 6,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.760Z",
+    "updated_at": "2025-10-16T05:48:49.760Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 31,
+  "fields": {
+    "title": "Mutlu Kopek 7",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 6,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.721Z",
+    "updated_at": "2025-10-16T05:48:49.721Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 40,
+  "fields": {
+    "title": "Sevimli Kedi 8",
+    "description": "Kedi bakim hizmetlerimizden bir kare",
+    "image": "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=800",
+    "category": "cats",
+    "tags": "kedi, bakim, muayene",
+    "order": 7,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.766Z",
+    "updated_at": "2025-10-16T05:48:49.766Z"
+  }
+},
+{
+  "model": "api.galleryimage",
+  "pk": 32,
+  "fields": {
+    "title": "Mutlu Kopek 8",
+    "description": "Klinigimizde tedavi goren sevimli dostumuz",
+    "image": "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=800",
+    "category": "dogs",
+    "tags": "kopek, tedavi, saglik",
+    "order": 7,
+    "is_active": true,
+    "created_at": "2025-10-16T05:48:49.725Z",
+    "updated_at": "2025-10-16T05:48:49.725Z"
+  }
+},
+{
+  "model": "api.googlereview",
+  "pk": 6,
+  "fields": {
+    "name": "Ayse Kayad",
+    "initial": "A",
+    "rating": 5,
+    "text": "Kopegim Charlie'nin ameliyati cok basarili gecti. Dr. Ayse Yilmaz ve ekibi gercekten cok ilgili ve profesyoneller. Ameliyat oncesi ve sonrasi surecte her asamada bilgilendirildik. Charlie su an cok mutlu ve saglikli. Kesinlikle tavsiye ederim!",
+    "date": "2 hafta once",
+    "verified": true,
+    "local_guide": true,
+    "is_active": true,
+    "order": 1,
+    "created_at": "2025-10-23T11:56:10.813Z",
+    "updated_at": "2025-10-23T12:26:14.112Z"
+  }
+},
+{
+  "model": "api.googlereview",
+  "pk": 7,
+  "fields": {
+    "name": "Mehmet Demir",
+    "initial": "M",
+    "rating": 5,
+    "text": "Kedim Minnos'un kisirlaştirma operasyonu icin geldik. Klinik cok temiz ve modern. Veteriner hekimler cok deneyimli. Operasyon cok kisa surede tamamlandi ve Minnos'um hic sikinti cekmedi. Fiyatlari da cok uygun. Harika bir hizmet!",
+    "date": "1 ay once",
+    "verified": true,
+    "local_guide": false,
+    "is_active": true,
+    "order": 2,
+    "created_at": "2025-10-23T11:56:10.876Z",
+    "updated_at": "2025-10-23T11:56:10.877Z"
+  }
+},
+{
+  "model": "api.googlereview",
+  "pk": 8,
+  "fields": {
+    "name": "Zeynep Arslan",
+    "initial": "Z",
+    "rating": 5,
+    "text": "Gece 2'de kopegimiz hasta oldu ve cok panik olduk. 7/24 acil hizmeti sayesinde hemen geldik. Veteriner hekim cok hizli mudahale etti ve kopegimiz su an saglikli. Bu hizmeti sunan nadir kliniklerden. Sonsuz tesekkurler!",
+    "date": "3 gun once",
+    "verified": true,
+    "local_guide": true,
+    "is_active": true,
+    "order": 3,
+    "created_at": "2025-10-23T11:56:10.907Z",
+    "updated_at": "2025-10-23T11:56:10.907Z"
+  }
+},
+{
+  "model": "api.googlereview",
+  "pk": 9,
+  "fields": {
+    "name": "Can Ozturk",
+    "initial": "C",
+    "rating": 5,
+    "text": "Veteriner klinigi arayanlar icin kesinlikle tavsiye ederim. Muayene icin gittigimizde cok detayli inceleme yaptilar. Butun testleri modern cihazlarla yapiyorlar. Fiyat-performans olarak da cok iyi. Artik sadece buraya geliyoruz.",
+    "date": "1 hafta once",
+    "verified": true,
+    "local_guide": false,
+    "is_active": true,
+    "order": 4,
+    "created_at": "2025-10-23T11:56:10.938Z",
+    "updated_at": "2025-10-23T12:28:06.977Z"
+  }
+},
+{
+  "model": "api.googlereview",
+  "pk": 10,
+  "fields": {
+    "name": "Elif Yildiz",
+    "initial": "E",
+    "rating": 5,
+    "text": "Klinigin ambiyansi harika, evcil hayvanlar icin stressiz bir ortam. Veteriner hekimlerin hayvanlara yaklasimi cok sevecen. Kopegim her seferinde mutlu ayriliyor buradan. Asi, bakim, kontrol her sey icin geliyoruz. Cok memnunuz!",
+    "date": "2 gun once",
+    "verified": true,
+    "local_guide": true,
+    "is_active": true,
+    "order": 5,
+    "created_at": "2025-10-23T11:56:10.948Z",
+    "updated_at": "2025-10-23T11:56:10.948Z"
+  }
+},
+{
+  "model": "api.googlereview",
+  "pk": 12,
+  "fields": {
+    "name": "boray öztürk",
+    "initial": "B",
+    "rating": 5,
+    "text": "Kopegim Charlie'nin ameliyati cok basarili gecti. Dr. Ayse Yilmaz ve ekibi gercekten cok ilgili ve profesyoneller. Ameliyat oncesi ve sonrasi surecte her asamada bilgilendirildik. Charlie su an cok mutlu ve saglikli. Kesinlikle tavsiye ederim!",
+    "date": "12/04/2023",
+    "verified": true,
+    "local_guide": false,
+    "is_active": true,
+    "order": 6,
+    "created_at": "2025-10-23T12:27:13.137Z",
+    "updated_at": "2025-10-23T12:29:30.359Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 4,
+  "fields": {
+    "page_name": "about",
+    "title": "Hakkımızda | X veteriner dfsdf",
+    "description": "Uzman kadromuz, modern ekipmanımız ve 7/24 hizmet anlayışımızla evcil dostlarınızın sağlığı için buradayız.",
+    "keywords": "veteriner kliniği hakkında, veteriner ekibi, İstanbul veteriner",
+    "og_image": "/og-about.jpg",
+    "canonical": "https://xveteriner.com/hakkimizda",
+    "site_name": null,
+    "twitter_handle": null,
+    "facebook_url": null,
+    "instagram_url": null,
+    "twitter_url": null,
+    "google_analytics_id": null,
+    "google_search_console_id": null,
+    "updated_at": "2025-10-23T08:02:10.749Z",
+    "created_at": "2025-10-21T07:00:41.637Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 7,
+  "fields": {
+    "page_name": "appointment",
+    "title": "x",
+    "description": "Evcil dostlarınız için hızlı ve kolay online randevu alın. 7/24 veteriner hizmeti, deneyimli kadro ile yanınızdayız.",
+    "keywords": "veteriner randevu, online randevu, veteriner randevu al, acil veteriner randevusu",
+    "og_image": "/og-appointment.jpg",
+    "canonical": "https://petkey.com/randevu",
+    "site_name": null,
+    "twitter_handle": null,
+    "facebook_url": null,
+    "instagram_url": null,
+    "twitter_url": null,
+    "google_analytics_id": null,
+    "google_search_console_id": null,
+    "updated_at": "2025-10-23T08:02:10.764Z",
+    "created_at": "2025-10-23T07:58:04.782Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 3,
+  "fields": {
+    "page_name": "blog",
+    "title": "Veteriner Kliniği",
+    "description": "Evcil hayvan bakımı, sağlık tavsiyeleri, beslenme rehberi ve veteriner uzmanlarından öneriler.",
+    "keywords": "veteriner blog, evcil hayvan bakımı, pet sağlığı, kedi bakımı, köpek bakımı",
+    "og_image": "/og-blog.jpg",
+    "canonical": "https://petkey.com/blog",
+    "site_name": null,
+    "twitter_handle": null,
+    "facebook_url": null,
+    "instagram_url": null,
+    "twitter_url": null,
+    "google_analytics_id": null,
+    "google_search_console_id": null,
+    "updated_at": "2025-10-23T08:02:10.740Z",
+    "created_at": "2025-10-21T07:00:41.631Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 5,
+  "fields": {
+    "page_name": "contact",
+    "title": "İletişim - x Veteriner",
+    "description": "kısa açıklama",
+    "keywords": "veteriner, x veteriner iletisim",
+    "og_image": "/og-contact.jpg",
+    "canonical": "https://xvet.com/iletisim",
+    "site_name": null,
+    "twitter_handle": null,
+    "facebook_url": null,
+    "instagram_url": null,
+    "twitter_url": null,
+    "google_analytics_id": null,
+    "google_search_console_id": null,
+    "updated_at": "2025-10-23T08:02:10.756Z",
+    "created_at": "2025-10-21T07:00:41.644Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 6,
+  "fields": {
+    "page_name": "global",
+    "title": "",
+    "description": "",
+    "keywords": "",
+    "og_image": "",
+    "canonical": "",
+    "site_name": "X Veteriner",
+    "twitter_handle": "@xveterinerkliniği",
+    "facebook_url": "https://facebook.com/xveteriner",
+    "instagram_url": "https://instagram.com/petkey",
+    "twitter_url": "https://twitter.com/xveteriner",
+    "google_analytics_id": "",
+    "google_search_console_id": "",
+    "updated_at": "2025-10-23T08:02:10.773Z",
+    "created_at": "2025-10-21T07:00:41.650Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 1,
+  "fields": {
+    "page_name": "homepage",
+    "title": "x veteriner polikliniği",
+    "description": "İstanbul'un en güvenilir veteriner kliniği. Acil veteriner hizmeti, uzman kadro, modern ekipman ile evcil dostlarınıza 7/24 profesyonel sağlık hizmeti sunuyoruz.",
+    "keywords": "veteriner, veteriner kliniği, acil veteriner, 7/24 veteriner, İstanbul veteriner, kedi veterineri, köpek veterineri, evcil hayvan doktoru",
+    "og_image": "/og-image.jpg",
+    "canonical": "https://petkey.com/",
+    "site_name": null,
+    "twitter_handle": null,
+    "facebook_url": null,
+    "instagram_url": null,
+    "twitter_url": null,
+    "google_analytics_id": null,
+    "google_search_console_id": null,
+    "updated_at": "2025-10-23T08:02:10.721Z",
+    "created_at": "2025-10-21T07:00:41.612Z"
+  }
+},
+{
+  "model": "api.seosettings",
+  "pk": 2,
+  "fields": {
+    "page_name": "services",
+    "title": "Hizmetler | X Veteriner Poliklniği",
+    "description": "Genel muayene, aşılama, cerrahi operasyonlar, diş tedavisi ve daha fazlası. Evcil dostlarınız için her türlü veteriner hizmeti.",
+    "keywords": "veteriner hizmetleri, aşılama, cerrahi, diş tedavisi, veteriner muayene",
+    "og_image": "/og-services.jpg",
+    "canonical": "https://petkey.com/hizmetler",
+    "site_name": null,
+    "twitter_handle": null,
+    "facebook_url": null,
+    "instagram_url": null,
+    "twitter_url": null,
+    "google_analytics_id": null,
+    "google_search_console_id": null,
+    "updated_at": "2025-10-23T08:02:10.731Z",
+    "created_at": "2025-10-21T07:00:41.624Z"
+  }
+},
+{
+  "model": "api.aboutpage",
+  "pk": 1,
+  "fields": {
+    "hero_subtitle": "Evcil dostlarınızın sağlığı ve mutluluğu için 10+ yıldır hizmetinizdeyiz",
+    "stats": [
+      {
+        "number": "4+",
+        "label": "Yıllık Tecrübe"
+      },
+      {
+        "number": "25K+",
+        "label": "Mutlu Hasta"
+      },
+      {
+        "number": "3",
+        "label": "Uzman Veteriner"
+      },
+      {
+        "number": "%99",
+        "label": "Memnuniyet Oranı"
+      }
+    ],
+    "story_title": "Hikayemiz",
+    "story_paragraph_1": "PetKey Veteriner Kliniği, 2014 yılında evcil hayvan sevgisi ve veterinerlik tutkusuyla kuruldu. Küçük bir klinikten başlayan yolculuğumuz, bugün binlerce mutlu evcil hayvan ve sahiplerinin güvendiği bir merkez haline geldi.",
+    "story_paragraph_2": "Modern teknoloji, deneyimli kadro ve sınırsız sevgi ile her gün daha fazla canına dokunuyoruz. Misyonumuz basit: Her evcil hayvana en iyi sağlık hizmetini sunmak ve onların mutlu, sağlıklı bir yaşam sürmelerini sağlamak.",
+    "values": [
+      {
+        "icon": "FaHeart",
+        "title": "Sevgi ve Özen",
+        "description": "Her hayvana aile ferdiniz gibi yaklaşıyor, onların mutluluğunu ön planda tutuyoruz."
+      },
+      {
+        "icon": "FaAward",
+        "title": "Profesyonellik",
+        "description": "En yüksek kalite standartlarında, modern ekipmanlarla hizmet veriyoruz."
+      },
+      {
+        "icon": "FaUserMd",
+        "title": "Uzman Kadro",
+        "description": "Alanında deneyimli, sürekli kendini geliştiren veteriner hekimlerimiz."
+      },
+      {
+        "icon": "FaPaw",
+        "title": "7/24 Hizmet",
+        "description": "Acil durumlarda her an ulaşabileceğiniz kesintisiz veteriner hizmeti sunuyoruz."
+      }
+    ],
+    "updated_at": "2025-10-21T07:42:59.016Z"
+  }
+},
+{
+  "model": "api.contactpage",
+  "pk": 1,
+  "fields": {
+    "hero_title": "İletişim",
+    "hero_subtitle": "Sevimli dostlarınızın sağlığı için her zaman yanınızdayız. 7/24 hizmetinizdeyiz!SAD",
+    "phone_number": "(0212) 123 45 67",
+    "phone_label": "7/24 Acil Hat",
+    "whatsapp_number": "0555 123 45 67",
+    "whatsapp_label": "Hızlı İletişim",
+    "email_primary": "info@petkey.com",
+    "email_secondary": "sdfd@petkey.com",
+    "address_line1": "Kadıköy, İstanbul",
+    "address_line2": "Türkiye",
+    "google_maps_url": "https://maps.app.goo.gl/1uSq3mJoDRmzQaJa9",
+    "google_maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.30037718189!2d32.7347423!3d39.8675091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347254cee2e89%3A0xff6c1eb72354563c!2zSGFjZXR0ZXBlIMOcbml2ZXJzaXRlc2kgRmVuIEZha8O8bHRlc2kgRGVrYW5sxLHEn8Sx!5e0!3m2!1str!2str!4v1761032001774!5m2!1str!2str\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade",
+    "working_hours": [
+      {
+        "day": "Pazartesi ",
+        "hours": "7/24 Hizmet"
+      },
+      {
+        "day": "Salı",
+        "hours": "7/24 Hizmet"
+      },
+      {
+        "day": "Çarşamba",
+        "hours": "7/24 Hizmet"
+      },
+      {
+        "day": "Perşembe",
+        "hours": "7/24 Hizmet"
+      },
+      {
+        "day": "Cuma",
+        "hours": "7/24 Hizmet"
+      },
+      {
+        "day": "Cumartesi",
+        "hours": "7/24 Hizmet"
+      },
+      {
+        "day": "Pazar",
+        "hours": "7/24 Hizmet"
+      }
+    ],
+    "why_contact_us": [
+      {
+        "icon": "🏥",
+        "title": "7/24 Hizmet",
+        "description": "Acil durumlar için her zaman ulaşılabilir"
+      },
+      {
+        "icon": "👨‍⚕️",
+        "title": "Uzman Kadro",
+        "description": "Deneyimli veteriner hekimler"
+      },
+      {
+        "icon": "⚡",
+        "title": "Hızlı Yanıt",
+        "description": "En kısa sürede size dönüş yapıyoruz"
+      },
+      {
+        "icon": "💚",
+        "title": "Güvenilir",
+        "description": "Binlerce mutlu müşteri"
+      }
+    ],
+    "emergency_title": "🚨 Acil  Durumlar İçin",
+    "emergency_subtitle": "Evcil dostunuzun acil bir durumu mu var? Hemen bizi arayın!",
+    "emergency_phone": "(0212) 123 45 67",
+    "emergency_whatsapp": "0555 123 45 67",
+    "updated_at": "2025-10-21T07:35:18.645Z"
+  }
+},
+{
+  "model": "api.servicespage",
+  "pk": 1,
+  "fields": {
+    "hero_title_line1": "Evcil Dostlarınız İçin",
+    "hero_title_line2": "Kapsamlı Hizmetler",
+    "hero_description": "Modern ekipmanlarımız ve uzman veteriner kadromuzla evcil hayvanlarınızın sağlığı için her türlü hizmeti sunuyoruz.",
+    "hero_phone": "(0212) 123 45 66",
+    "hero_phone_link": "+902121234566",
+    "feature_pills": [
+      {
+        "icon": "🏥",
+        "text": "Modern Klinik"
+      },
+      {
+        "icon": "⚡",
+        "text": "7/24 Acil Servis"
+      },
+      {
+        "icon": "👨‍⚕️",
+        "text": "Uzman Kadro"
+      }
+    ],
+    "stats": [
+      {
+        "number": "21+",
+        "label": "Hizmet Dalı",
+        "icon": "🩺",
+        "gradient": "from-emerald-500 to-cyan-500"
+      },
+      {
+        "number": "7/24",
+        "label": "Acil Hizmet",
+        "icon": "⏰",
+        "gradient": "from-blue-500 to-purple-500"
+      },
+      {
+        "number": "15+",
+        "label": "Yıllık Deneyim",
+        "icon": "👨‍⚕️",
+        "gradient": "from-emerald-500 to-cyan-500"
+      },
+      {
+        "number": "100%",
+        "label": "Modern Ekipman",
+        "icon": "🏥",
+        "gradient": "from-orange-500 to-pink-500"
+      },
+      {
+        "number": "10K+",
+        "label": "Mutlu Hayvan",
+        "icon": "💚",
+        "gradient": "from-green-500 to-emerald-500"
+      }
+    ],
+    "cta_title": "Daha Fazla Bilgi İçin",
+    "cta_subtitle": "Bize Ulaşın",
+    "cta_description": "Size en uygun hizmeti bulmak ve randevu oluşturmak için 7/24 hizmetinizdeyiz",
+    "cta_phone": "(0212) 123 45 66",
+    "updated_at": "2025-10-23T16:46:18.026Z"
+  }
+},
+{
+  "model": "api.homepage",
+  "pk": 1,
+  "fields": {
+    "hero_title": "Evcil Dostlarınız Güvenli Ellerde",
+    "hero_subtitle": "Modern ekipman ve deneyimli veteriner kadromuzla evcil hayvanlarınızın sağlığı için 7/24 hizmetinizdeyiz. Onların mutluluğu bizim önceliğimiz.",
+    "hero_cta_text": "Randevu Al",
+    "hero_cta_link": "/randevu",
+    "hero_secondary_cta_text": "Hizmetlerimiz",
+    "hero_secondary_cta_link": "/hizmetler",
+    "show_stats": true,
+    "stat1_number": "4",
+    "stat1_label": "Uzman Veteriner",
+    "stat2_number": "5,000+",
+    "stat2_label": "Mutlu Dost",
+    "stat3_number": "10+",
+    "stat3_label": "Yıllık Deneyim",
+    "stat4_number": "24/7",
+    "stat4_label": "Hizmet",
+    "show_services": true,
+    "services_title": "Hizmetlerimiz",
+    "services_subtitle": "Evcil dostlarınız için kapsamlı veteriner hizmetleri",
+    "show_why_choose": true,
+    "why_choose_title": "Neden Biz?",
+    "why_choose_subtitle": "Modern teknoloji ve sevgi dolu yaklaşımımızla fark yaratıyoruz",
+    "why_choose_features": [
+      {
+        "icon": "🏥",
+        "title": "Modern Klinik",
+        "description": "En son teknoloji ekipmanlarla donatılmış kliniğimiz"
+      },
+      {
+        "icon": "👨‍⚕️",
+        "title": "Uzman Kadro",
+        "description": "Alanında deneyimli veteriner hekimlerimiz"
+      },
+      {
+        "icon": "💊",
+        "title": "Kapsamlı Hizmet",
+        "description": "Teşhisten tedaviye tüm veteriner hizmetleri"
+      },
+      {
+        "icon": "🚑",
+        "title": "Acil Müdahale",
+        "description": "7/24 acil veteriner hizmeti"
+      }
+    ],
+    "show_about": true,
+    "about_title": "Biz Kimiz?",
+    "about_description": "İstanbul'un güvenilir veteriner kliniği olarak evcil dostlarınızın sağlığı için hizmet veriyoruz.",
+    "about_cta_text": "Daha Fazla Bilgi",
+    "show_veterinarians": true,
+    "veterinarians_title": "Uzman Kadromuz",
+    "veterinarians_subtitle": "Deneyimli ve uzman veteriner hekimlerimiz",
+    "show_appointment_cta": true,
+    "appointment_cta_title": "Randevu Almaya Hazır mısınız?",
+    "appointment_cta_description": "Evcil dostunuz için hemen online randevu oluşturun",
+    "appointment_cta_button": "Hemen Randevu Al",
+    "appointment_cta_phone": "(0538) 642 10 87",
+    "appointment_cta_phone_link": "+905386421087",
+    "appointment_cta_features": [
+      {
+        "text": "Hızlı Randevu"
+      },
+      {
+        "text": "Uzman Kadro"
+      },
+      {
+        "text": "Modern Ekipman"
+      },
+      {
+        "text": "7/24 Hizmet"
+      }
+    ],
+    "appointment_cta_stat1_number": "4.9",
+    "appointment_cta_stat1_label": "Google Puanı",
+    "appointment_cta_stat2_number": "5,000+",
+    "appointment_cta_stat2_label": "Mutlu Hayvan",
+    "appointment_cta_stat3_number": "15+",
+    "appointment_cta_stat3_label": "Uzman Veteriner",
+    "show_reviews": false,
+    "reviews_title": "Müşteri Yorumları",
+    "reviews_subtitle": "Google'da aldığımız gerçek müşteri değerlendirmeleri",
+    "reviews_rating": "4.9",
+    "reviews_count": "250+",
+    "reviews_cta_text": "Tüm Yorumları Google'da Gör",
+    "reviews_cta_link": "https://www.facebook.com",
+    "show_blog": true,
+    "blog_title": "Blog Yazılarımız",
+    "blog_subtitle": "Evcil hayvan bakımı hakkında faydalı bilgilerD",
+    "show_contact": true,
+    "contact_title": "Bize Ulaşın",
+    "contact_description": "Sorularınız için bizimle iletişime geçin",
+    "created_at": "2025-10-23T06:00:03.880Z",
+    "updated_at": "2025-10-23T16:37:38.039Z"
+  }
+},
+{
+  "model": "api.sitesettings",
+  "pk": 1,
+  "fields": {
+    "site_title": "Veteriner Kliniği F",
+    "site_logo_image": "logos/petkey-logo-siyah1.png",
+    "site_logo_text": "",
+    "site_logo_subtitle": "",
+    "site_logo_emoji": "",
+    "contact_phone": "(0212) 123 45 9034",
+    "contact_phone_link": "+902121234567",
+    "contact_whatsapp": "+905345789415",
+    "contact_email": "info@XFveteriner.com",
+    "contact_address": "Kadıköy, İstanbul545",
+    "footer_about_text": "Sevimli dostlarınızın sağlığı için modern ekipman ve deneyimli kadromuzla 7/24 hizmetinizdeyiz. Onların mutluluğu bizim önceliğimiz.",
+    "footer_facebook_url": "https://facebook.com/veteriner",
+    "footer_instagram_url": "https://instagram.com/veteriner",
+    "footer_twitter_url": "https://twitter.com/veteriner",
+    "working_hours_weekday": "09:00 - 18:00",
+    "working_hours_weekend": "10:00 - 16:00",
+    "working_hours_info": "7/24 Acil Servis",
+    "created_at": "2025-10-23T10:35:28.014Z",
+    "updated_at": "2025-10-23T17:12:08.235Z"
+  }
+}
+]

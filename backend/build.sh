@@ -13,3 +13,6 @@ python manage.py migrate
 
 # Create admin user if doesn't exist
 python manage.py create_admin
+
+# Load initial data (blog posts, services, etc.)
+python manage.py load_initial_data
