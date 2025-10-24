@@ -1,4 +1,5 @@
 from django.urls import path, include
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.routers import DefaultRouter
 from .views import (
     VeterinarianViewSet,
@@ -47,8 +48,8 @@ router.register(r'site-settings', SiteSettingsViewSet, basename='sitesettings')
 # The API URLs are now determined automatically by the router
 urlpatterns = [
     path('', include(router.urls)),
-    # Authentication endpoints
-    path('auth/login/', login_view, name='login'),
+    # Authentication endpoints (CSRF exempt for cross-origin)
+    path('auth/login/', csrf_exempt(login_view), name='login'),
     path('auth/logout/', logout_view, name='logout'),
     path('auth/check/', check_auth, name='check-auth'),
     # User management endpoints
