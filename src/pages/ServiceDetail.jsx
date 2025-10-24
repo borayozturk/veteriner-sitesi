@@ -19,7 +19,7 @@ const ServiceDetail = () => {
         setLoading(true);
 
         // Fetch service data from API
-        const serviceResponse = await fetch(`http://localhost:8000/api/services/all/`);
+        const serviceResponse = await fetch(`${import.meta.env.VITE_API_URL}/api/services/all/`);
         if (serviceResponse.ok) {
           const servicesData = await serviceResponse.json();
           const foundService = servicesData.find(s => s.slug === slug);
@@ -38,7 +38,7 @@ const ServiceDetail = () => {
         }
 
         // Fetch page content
-        const pageResponse = await fetch(`http://localhost:8000/api/pages/by-name/${slug}/`);
+        const pageResponse = await fetch(`${import.meta.env.VITE_API_URL}/api/pages/by-name/${slug}/`);
         if (pageResponse.ok) {
           const data = await pageResponse.json();
           setPageContent(data);

@@ -28,7 +28,7 @@ const GoogleReviewsManager = () => {
   const fetchReviews = async () => {
     try {
       setError(null);
-      const response = await fetch('http://localhost:8000/api/google-reviews/');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/google-reviews/');
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -55,8 +55,8 @@ const GoogleReviewsManager = () => {
 
     try {
       const url = editingReview
-        ? `http://localhost:8000/api/google-reviews/${editingReview.id}/`
-        : 'http://localhost:8000/api/google-reviews/';
+        ? `${import.meta.env.VITE_API_URL}/api/google-reviews/${editingReview.id}/`
+        : import.meta.env.VITE_API_URL + '/api/google-reviews/';
 
       const method = editingReview ? 'PUT' : 'POST';
 
@@ -97,7 +97,7 @@ const GoogleReviewsManager = () => {
     if (!confirm('Bu yorumu silmek istediğinizden emin misiniz?')) return;
 
     try {
-      const response = await fetch(`http://localhost:8000/api/google-reviews/${id}/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/google-reviews/${id}/`, {
         method: 'DELETE',
       });
 
@@ -114,7 +114,7 @@ const GoogleReviewsManager = () => {
 
   const toggleActive = async (review) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/google-reviews/${review.id}/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/google-reviews/${review.id}/`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

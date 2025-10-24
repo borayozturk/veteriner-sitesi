@@ -26,7 +26,7 @@ const ServicesPageEditor = () => {
 
   const fetchPageSettings = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/services-page/');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/services-page/');
       const data = await response.json();
       console.log('Fetched services page data:', data);
       setFormData(data);
@@ -44,7 +44,7 @@ const ServicesPageEditor = () => {
     setMessage({ type: '', text: '' });
 
     try {
-      const response = await fetch(`http://localhost:8000/api/services-page/1/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/services-page/1/`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

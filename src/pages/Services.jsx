@@ -30,7 +30,7 @@ const Services = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/services/active/');
+        const response = await fetch(import.meta.env.VITE_API_URL + '/api/services/active/');
         const data = await response.json();
         console.log('🔍 Services Page - Fetched services from API:', data.length, 'services');
 
@@ -61,7 +61,7 @@ const Services = () => {
   useEffect(() => {
     const fetchPageSettings = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/services-page/');
+        const response = await fetch(import.meta.env.VITE_API_URL + '/api/services-page/');
         const data = await response.json();
         console.log('🔍 Services Page - Fetched page settings:', data);
         setPageSettings(data);

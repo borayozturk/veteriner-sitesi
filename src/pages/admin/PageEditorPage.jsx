@@ -46,7 +46,7 @@ const PageEditorPage = () => {
   const fetchPages = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:8000/api/pages/', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/pages/', {
         headers: {
           'Accept': 'application/json; charset=utf-8',
         },
@@ -154,7 +154,7 @@ const PageEditorPage = () => {
       };
 
       if (editingPage) {
-        await fetch(`http://localhost:8000/api/pages/${editingPage.id}/`, {
+        await fetch(`${import.meta.env.VITE_API_URL}/api/pages/${editingPage.id}/`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json; charset=utf-8',
@@ -164,7 +164,7 @@ const PageEditorPage = () => {
         });
         alert('Sayfa başarıyla güncellendi!');
       } else {
-        await fetch('http://localhost:8000/api/pages/', {
+        await fetch(import.meta.env.VITE_API_URL + '/api/pages/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json; charset=utf-8',

@@ -16,7 +16,7 @@ const ServicesManagePage = () => {
   const fetchServices = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:8000/api/services/all/', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/services/all/', {
         headers: {
           'Accept': 'application/json; charset=utf-8',
         },
@@ -34,7 +34,7 @@ const ServicesManagePage = () => {
   const handleToggleActive = async (service) => {
     try {
       setSaving(true);
-      const response = await fetch(`http://localhost:8000/api/services/${service.id}/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/services/${service.id}/`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json; charset=utf-8',

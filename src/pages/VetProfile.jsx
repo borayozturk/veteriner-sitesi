@@ -29,10 +29,10 @@ const VetProfile = () => {
           avatarUrl = vetData.avatar;
         } else if (vetData.avatar.startsWith('/media')) {
           // Relative path from backend - prepend backend URL
-          avatarUrl = `http://localhost:8000${vetData.avatar}`;
+          avatarUrl = `${import.meta.env.VITE_API_URL}${vetData.avatar}`;
         } else {
           // Assume it's a relative path without leading slash
-          avatarUrl = `http://localhost:8000/media/${vetData.avatar}`;
+          avatarUrl = `${import.meta.env.VITE_API_URL}/media/${vetData.avatar}`;
         }
       }
 

@@ -29,7 +29,7 @@ const MessagesPage = () => {
   const fetchMessages = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:8000/api/contact/?deleted=false');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/contact/?deleted=false');
       const data = await response.json();
 
       // Handle both array and paginated response
@@ -58,7 +58,7 @@ const MessagesPage = () => {
 
   const fetchTrashedMessages = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/contact/?deleted=true');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/contact/?deleted=true');
       const data = await response.json();
 
       // Handle both array and paginated response
@@ -129,7 +129,7 @@ const MessagesPage = () => {
     if (window.confirm('Bu mesaj çöp kutusuna taşınacak. Emin misiniz?')) {
       try {
         // Soft delete - move to trash
-        await fetch(`http://localhost:8000/api/contact/${id}/`, {
+        await fetch(`${import.meta.env.VITE_API_URL}/api/contact/${id}/`, {
           method: 'DELETE',
         });
 
@@ -149,7 +149,7 @@ const MessagesPage = () => {
 
   const handleRestore = async (id) => {
     try {
-      await fetch(`http://localhost:8000/api/contact/${id}/restore/`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/contact/${id}/restore/`, {
         method: 'PATCH',
       });
 
@@ -169,7 +169,7 @@ const MessagesPage = () => {
   const handlePermanentDelete = async (id) => {
     if (window.confirm('Bu mesaj kalıcı olarak silinecek ve geri alınamayacak. Emin misiniz?')) {
       try {
-        await fetch(`http://localhost:8000/api/contact/${id}/permanent_delete/`, {
+        await fetch(`${import.meta.env.VITE_API_URL}/api/contact/${id}/permanent_delete/`, {
           method: 'DELETE',
         });
 

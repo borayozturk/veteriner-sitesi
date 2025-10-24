@@ -24,7 +24,7 @@ const UserManagementPage = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:8000/api/users/', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/users/', {
         credentials: 'include'
       });
       const data = await response.json();
@@ -89,7 +89,7 @@ const UserManagementPage = () => {
           delete updateData.password;
         }
 
-        response = await fetch(`http://localhost:8000/api/users/${editingUser.id}/update/`, {
+        response = await fetch(`${import.meta.env.VITE_API_URL}/api/users/${editingUser.id}/update/`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ const UserManagementPage = () => {
         });
       } else {
         // Create user
-        response = await fetch('http://localhost:8000/api/users/create/', {
+        response = await fetch(import.meta.env.VITE_API_URL + '/api/users/create/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ const UserManagementPage = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:8000/api/users/${userId}/delete/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/users/${userId}/delete/`, {
         method: 'DELETE',
         credentials: 'include'
       });

@@ -63,7 +63,7 @@ export const SEOProvider = ({ children }) => {
   const loadSEOSettings = async () => {
     try {
       console.log('⏳ Loading SEO settings from API...');
-      const response = await fetch('http://localhost:8000/api/seo-settings/all_settings/');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/seo-settings/all_settings/');
       if (response.ok) {
         const data = await response.json();
         console.log('✅ SEO Settings loaded successfully:', data);

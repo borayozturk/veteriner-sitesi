@@ -103,7 +103,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         // Fetch homepage content
-        const homeResponse = await fetch('http://localhost:8000/api/homepage/content/');
+        const homeResponse = await fetch(import.meta.env.VITE_API_URL + '/api/homepage/content/');
         const homeData = await homeResponse.json();
         setHomePageData(homeData);
 
@@ -124,7 +124,7 @@ const Home = () => {
         setBlogPosts(transformedPosts);
 
         // Fetch Google reviews
-        const reviewsResponse = await fetch('http://localhost:8000/api/google-reviews/?active_only=true');
+        const reviewsResponse = await fetch(import.meta.env.VITE_API_URL + '/api/google-reviews/?active_only=true');
         if (reviewsResponse.ok) {
           const reviewsData = await reviewsResponse.json();
           // Handle paginated response from Django REST framework

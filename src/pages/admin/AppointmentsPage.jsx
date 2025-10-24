@@ -26,7 +26,7 @@ const AppointmentsPage = () => {
       setLoading(true);
       console.log('Fetching appointments from API...');
       // Fetch real appointments from API
-      const response = await fetch('http://localhost:8000/api/appointments/');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/appointments/');
       console.log('Response status:', response.status);
 
       if (!response.ok) {
@@ -183,7 +183,7 @@ const AppointmentsPage = () => {
   const updateAppointmentStatus = async (id, newStatus) => {
     try {
       // Update on backend
-      const response = await fetch(`http://localhost:8000/api/appointments/${id}/update_status/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/appointments/${id}/update_status/`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

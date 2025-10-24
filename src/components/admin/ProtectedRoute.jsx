@@ -19,7 +19,7 @@ const ProtectedRoute = ({ children }) => {
 
     // Then verify with backend
     try {
-      const response = await fetch('http://localhost:8000/api/auth/check/', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/auth/check/', {
         credentials: 'include'
       });
 

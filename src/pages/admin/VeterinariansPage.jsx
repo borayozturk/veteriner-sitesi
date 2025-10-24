@@ -217,8 +217,8 @@ const VeterinariansPage = () => {
         formDataToSend.append('is_active', formData.is_active);
 
         const url = editingVet
-          ? `http://localhost:8000/api/veterinarians/${editingVet.id}/`
-          : 'http://localhost:8000/api/veterinarians/';
+          ? `${import.meta.env.VITE_API_URL}/api/veterinarians/${editingVet.id}/`
+          : import.meta.env.VITE_API_URL + '/api/veterinarians/';
 
         const method = editingVet ? 'PUT' : 'POST';
 
@@ -264,7 +264,7 @@ const VeterinariansPage = () => {
 
           // If there's a URL avatar, update it separately via direct fetch
           if (formData.avatar && formData.avatar.trim() !== '') {
-            await fetch(`http://localhost:8000/api/veterinarians/${editingVet.id}/`, {
+            await fetch(`${import.meta.env.VITE_API_URL}/api/veterinarians/${editingVet.id}/`, {
               method: 'PATCH',
               headers: {
                 'Content-Type': 'application/json',
@@ -280,7 +280,7 @@ const VeterinariansPage = () => {
 
           // If there's a URL avatar, update it after creation
           if (formData.avatar && formData.avatar.trim() !== '' && newVet.id) {
-            await fetch(`http://localhost:8000/api/veterinarians/${newVet.id}/`, {
+            await fetch(`${import.meta.env.VITE_API_URL}/api/veterinarians/${newVet.id}/`, {
               method: 'PATCH',
               headers: {
                 'Content-Type': 'application/json',
@@ -461,7 +461,7 @@ const VeterinariansPage = () => {
                     vet.avatar
                       ? (vet.avatar.startsWith('http')
                           ? vet.avatar
-                          : `http://localhost:8000${vet.avatar.startsWith('/') ? vet.avatar : '/media/' + vet.avatar}`)
+                          : `${import.meta.env.VITE_API_URL}${vet.avatar.startsWith('/') ? vet.avatar : '/media/' + vet.avatar}`)
                       : 'https://via.placeholder.com/400?text=Veteriner'
                   }
                   alt={vet.name}

@@ -26,7 +26,7 @@ const ChatBot = () => {
   useEffect(() => {
     const fetchSettings = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/site-settings/get_settings/');
+        const response = await fetch(import.meta.env.VITE_API_URL + '/api/site-settings/get_settings/');
         if (response.ok) {
           const data = await response.json();
           setSiteSettings(data);

@@ -126,7 +126,7 @@ const SEOManagementPage = () => {
 
     const loadSeoSettings = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/seo-settings/all_settings/');
+        const response = await fetch(import.meta.env.VITE_API_URL + '/api/seo-settings/all_settings/');
         if (response.ok) {
           const data = await response.json();
           // Merge API data with defaults (API data takes priority)
@@ -160,7 +160,7 @@ const SEOManagementPage = () => {
 
     const loadServices = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/services/all/');
+        const response = await fetch(import.meta.env.VITE_API_URL + '/api/services/all/');
         if (response.ok) {
           const data = await response.json();
           console.log('✅ Services loaded:', data.length, 'services');
@@ -215,7 +215,7 @@ const SEOManagementPage = () => {
 
     try {
       // Save to backend API
-      const response = await fetch('http://localhost:8000/api/seo-settings/bulk_update/', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/seo-settings/bulk_update/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(seoSettings)
@@ -408,7 +408,7 @@ const SEOManagementPage = () => {
                     <button
                       onClick={async () => {
                         try {
-                          const response = await fetch(`http://localhost:8000/api/services/${selectedService.id}/`, {
+                          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/services/${selectedService.id}/`, {
                             method: 'PATCH',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({

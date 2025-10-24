@@ -15,7 +15,7 @@ const HomePageEditor = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/homepage/content/');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/homepage/content/');
       const result = await response.json();
       setData(result);
     } catch (error) {
@@ -32,7 +32,7 @@ const HomePageEditor = () => {
     setMessage('');
 
     try {
-      const response = await fetch(`http://localhost:8000/api/homepage/1/`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/homepage/1/`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

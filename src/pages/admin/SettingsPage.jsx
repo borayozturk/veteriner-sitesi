@@ -45,7 +45,7 @@ const SettingsPage = () => {
   const loadSettings = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('http://localhost:8000/api/site-settings/get_settings/');
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/site-settings/get_settings/');
       if (response.ok) {
         const data = await response.json();
         setSettings(data);
@@ -91,7 +91,7 @@ const SettingsPage = () => {
         }
       });
 
-      const response = await fetch('http://localhost:8000/api/site-settings/update_settings/', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/api/site-settings/update_settings/', {
         method: 'POST',
         body: formData,
       });
