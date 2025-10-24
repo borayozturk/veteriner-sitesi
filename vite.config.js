@@ -30,32 +30,9 @@ export default defineConfig({
   ],
 
   build: {
-    // Code splitting for better caching
+    // Let Vite handle chunking automatically
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          // Vendor chunks
-          if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
-              return 'react-vendor';
-            }
-            if (id.includes('framer-motion') || id.includes('@react-spring')) {
-              return 'animation-vendor';
-            }
-            if (id.includes('@tiptap') || id.includes('prosemirror')) {
-              return 'editor-vendor';
-            }
-            if (id.includes('react-icons')) {
-              return 'icons-vendor';
-            }
-            // Other node_modules
-            return 'vendor';
-          }
-          // Admin pages in separate chunk
-          if (id.includes('/pages/admin/')) {
-            return 'admin';
-          }
-        },
         // Better file naming for caching
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
